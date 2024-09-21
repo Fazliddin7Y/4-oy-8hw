@@ -1,0 +1,518 @@
+body {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(43, 43, 43);
+  padding: 10px 20px;
+  height: 60px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.header .logo img {
+  margin-right: 10px;
+  height: 24px;
+}
+.header .logo span {
+  font-weight: bold;
+}
+.header .nav-container {
+  display: flex;
+  align-items: center;
+}
+.header .nav {
+  display: flex;
+  gap: 20px;
+}
+.header .nav .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+.header .nav .nav-link:hover, .header .nav .nav-link:active {
+  color: #9b59b6;
+}
+.header .signup-btn {
+  display: flex;
+  align-items: center;
+  background-color: #9b59b6;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 16px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.header .signup-btn img {
+  margin-right: 8px;
+  height: 18px;
+}
+.header .signup-btn:hover {
+  background-color: #8e44ad;
+}
+.header .signup-btn:active {
+  background-color: #7d3c98;
+  transform: scale(0.98);
+}
+.header .hamburger {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  font-size: 27px;
+  border: none;
+  display: none;
+}
+
+.hero-section {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.hero-section .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-section .background-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.auction-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #181818;
+  color: #fff;
+}
+.auction-section .nft-details {
+  width: 60%;
+}
+.auction-section .nft-details h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.auction-section .nft-details .date {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+.auction-section .nft-details .creator-info {
+  margin-bottom: 20px;
+}
+.auction-section .nft-details .creator-info span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #bbb;
+}
+.auction-section .nft-details .creator-info .creator {
+  display: flex;
+  align-items: center;
+}
+.auction-section .nft-details .creator-info .creator img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.auction-section .nft-details .creator-info .creator p {
+  font-size: 1rem;
+  color: #fff;
+}
+.auction-section .nft-details .description {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+.auction-section .nft-details .details-links {
+  margin-bottom: 20px;
+}
+.auction-section .nft-details .details-links p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.auction-section .nft-details .details-links a {
+  display: block;
+  color: #9b59b6;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.auction-section .nft-details .details-links a:hover {
+  text-decoration: underline;
+}
+.auction-section .nft-details .tags {
+  display: flex;
+  gap: 10px;
+}
+.auction-section .nft-details .tags .tag {
+  background-color: #333;
+  color: #bbb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.auction-section .nft-details .tags .tag:hover {
+  background-color: #444;
+}
+.auction-section .nft-details .tags .tag:active {
+  background-color: #555;
+  transform: scale(0.98);
+}
+.auction-section .auction-card {
+  width: 35%;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  height: 220px;
+}
+.auction-section .auction-card .timer {
+  margin-bottom: 20px;
+}
+.auction-section .auction-card .timer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.auction-section .auction-card .timer .countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.auction-section .auction-card .timer .countdown .time-box {
+  display: inline-block;
+  text-align: center;
+}
+.auction-section .auction-card .timer .countdown .time-box .time {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.auction-section .auction-card .bid-btn {
+  background-color: #9b59b6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.auction-section .auction-card .bid-btn:hover {
+  background-color: #8e44ad;
+}
+.auction-section .auction-card .bid-btn:active {
+  background-color: #7d3c98;
+  transform: scale(0.97);
+}
+
+.more-from-artist {
+  padding: 50px 0;
+  background-color: rgb(43, 43, 43);
+}
+.more-from-artist h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 50px 40px;
+}
+.more-from-artist .artist-page-btn {
+  display: inline-block;
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.more-from-artist .artist-page-btn:hover {
+  background-color: #9b59b6;
+}
+.more-from-artist .artist-page-btn:active {
+  background-color: #7d3c98;
+}
+.more-from-artist .nft-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.more-from-artist .nft-cards .nft-card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.more-from-artist .nft-cards .nft-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.more-from-artist .nft-cards .nft-card .nft-image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.more-from-artist .nft-cards .nft-card .nft-info {
+  padding: 20px;
+}
+.more-from-artist .nft-cards .nft-card .nft-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.more-from-artist .nft-cards .nft-card .nft-info p {
+  margin-bottom: 10px;
+  color: #bbb;
+}
+.more-from-artist .nft-cards .nft-card .nft-info .nft-price,
+.more-from-artist .nft-cards .nft-card .nft-info .nft-bid {
+  display: flex;
+  justify-content: space-between;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+  .more-from-artist .nft-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .more-from-artist .nft-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: #222;
+  padding: 70px 100px;
+}
+.cards-section .card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 500px;
+}
+.cards-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.cards-section .card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards-section .card .card-info {
+  padding: 20px;
+}
+.cards-section .card .card-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.cards-section .card .card-info p {
+  margin-bottom: 15px;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+}
+.cards-section .card .card-info p .avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.cards-section .card .card-info .price-info, .cards-section .card .card-info .bid-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.cards-section .card .card-info .price-info span, .cards-section .card .card-info .bid-info span {
+  font-size: 0.9em;
+}
+
+.footer {
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 40px 60px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .container .footer-section {
+  flex: 1;
+  margin: 20px;
+}
+.footer .container .footer-section.logo-section {
+  max-width: 300px;
+}
+.footer .container .footer-section.explore-section, .footer .container .footer-section.newsletter-section {
+  max-width: 200px;
+}
+.footer .container .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.footer .container .footer-section p {
+  margin-bottom: 10px;
+}
+.footer .container .footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .container .footer-section ul li {
+  margin-bottom: 10px;
+}
+.footer .container .footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .container .footer-section ul li a:hover {
+  color: #9b59b6;
+}
+.footer .container .footer-section .footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.footer .container .footer-section .footer-logo img {
+  margin-right: 10px;
+  height: 30px;
+}
+.footer .container .footer-section .footer-logo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer .container .footer-section .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.footer .container .footer-section .social-icons a {
+  display: block;
+}
+.footer .container .footer-section .social-icons a img {
+  width: 24px;
+  height: 24px;
+}
+.footer .container .footer-section .newsletter-form {
+  display: flex;
+  position: relative;
+  max-width: 400px;
+}
+.footer .container .footer-section .newsletter-form .newsletter-input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  padding-right: 120px;
+}
+.footer .container .footer-section .newsletter-form .newsletter-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #9b59b6;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer .container .footer-section .newsletter-form .newsletter-btn:hover {
+  background-color: #8e44ad;
+}
+.footer .footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header .nav {
+    display: none;
+  }
+  .header .hamburger {
+    display: block;
+  }
+  .profile-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .profile-section .profile-info h1 {
+    font-size: 2rem;
+  }
+  .profile-section .wallet-buttons {
+    align-items: center;
+  }
+  .cards-section {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .header .signup-btn {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .hero-section {
+    height: 300px;
+  }
+  .profile-section {
+    padding: 10px;
+  }
+  .profile-section .profile-info h1 {
+    font-size: 1.5rem;
+  }
+  .footer .container {
+    flex-direction: column;
+  }
+  .cards-section {
+    padding: 30px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
